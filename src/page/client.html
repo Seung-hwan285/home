@@ -8,42 +8,52 @@
 </head>
 <body>
     <nav>
-        <div class="header-bottom">
-            <div class="inner">
-                <div class="gnb1">
-                    <li>
-                        <a name="mainMenu" class="gnb-selector" href="/home">새소식</a>
-                        <ul name="subMenu" class="gnb2">
-                            <li>
-                                <a href="./src/page/notice.html">공지사항</a>
-                            </li>
-                            <li>
-                                <a href=./src/page/event.html>이벤트</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a name="mainMenu" class="gnb-selector" href="/">여행 추천</a>
-                        <ul name="subMenu" class="gnb2">
-                            <li>
-                                <a href="/">국내 여행 추천</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a name="mainMenu" class="gnb-selector" href="./src/page/client.html">고객센터</a>
-                        <ul name="subMenu" class="gnb2">
-                            <li>
-                                <a href="/">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="/">Q&A</a>
-                            </li>
-                        </ul>
-                    </li>
+        <div id="DomesticTourRecommend">
+            <div id="wrap" class="main-wrap">
+                <div id="header">
+                    <!-- header-top -->
+                    <div class="header-top">
+                        <div class="top-inner">
+                            <button type="button" class="logo-btn" onclick="window.location.href='../../index.html'">
+                                <img class="logo" src="../../img/logo.png" alt="DTR logo">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- header-bottom 메인메뉴 -->
+                    <div class="header-bottom">
+                        <div class="bot-inner">
+                            <nav class="gnb1">
+                                <li>
+                                    <a name="mainMenu" href="./notice.html">새소식</a>
+                                    <ul name="subMenu" class="gnb2">
+                                        <li>
+                                            <a href="./notice.html">공지사항</a>
+                                        </li>
+                                        <li>
+                                            <a href=./event.html>이벤트</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a name="mainMenu" class="gnb-selector" href="pass">여행 추천</a>
+                                    <ul name="subMenu" class="gnb2">
+                                        <li>
+                                            <a href="pass">국내 여행</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a name="mainMenu" class="gnb-selector" href="./client.html">고객센터</a>
+                                    <ul name="subMenu" class="gnb2">
+                                        <li>
+                                            <a href="./client.html">Q&A</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
     </nav>
 
     <main>
@@ -78,7 +88,7 @@
                             </ul>
                         </li>
                         <li class="blocks-item">
-                            <h3 class="blocks-item-title">공지사항</h3>
+                            <h3 class="blocks-item-title">항공권 문의</h3>
                             <ul>
                                 <li class="articles_item">
                                     <a href="/" class="articles_link">2022년 12월 1일 부 유류할증료 안내</a>
@@ -95,7 +105,7 @@
                             </ul>
                         </li>
                         <li class="blocks-item">
-                            <h3 class="blocks-item-title">공지사항</h3>
+                            <h3 class="blocks-item-title">여행 문의</h3>
                             <ul>
                                 <li class="articles_item">
                                     <a href="/" class="articles_link">2022년 12월 1일 부 유류할증료 안내</a>
@@ -112,7 +122,7 @@
                             </ul>
                         </li>
                         <li class="blocks-item">
-                            <h3 class="blocks-item-title">공지사항</h3>
+                            <h3 class="blocks-item-title">여행 상품 FAQ</h3>
                             <ul>
                                 <li class="articles_item">
                                     <a href="/" class="articles_link">2022년 12월 1일 부 유류할증료 안내</a>
@@ -129,7 +139,7 @@
                             </ul>
                         </li>
                         <li class="blocks-item">
-                            <h3 class="blocks-item-title">공지사항</h3>
+                            <h3 class="blocks-item-title">여행자 신뢰센터</h3>
                             <ul>
                                 <li class="articles_item">
                                     <a href="/" class="articles_link">2022년 12월 1일 부 유류할증료 안내</a>
@@ -157,18 +167,18 @@
                 <h3 class="footer-blocks__title">우리 상품이 궁금하신가요?</h3>
 
                 <a class="footer-block footer-block--primary" href="/">
-                    <h4 class="footer-block__title">검색방법</h4>
+                    <h4 class="footer-block__title item1">검색방법</h4>
                     <div class="footer-block-description">
-                        상품번호 5자리 또는 6자리를 검색하여 해당 상품의 자주 묻는 질문을 확인해보세요.
+                        <span class="text">상품번호 5자리 또는 6자리를 검색하여 해당 상품의 자주 묻는 질문 확인해주세요.</span>
                     </div>
                 </a>
 
 
                 <a class="footer-block footer-block--secondary" href="/">
-                    <h4 class="footer-block__title">여행자 신뢰센터</h4>
+                    <h4 class="footer-block__title item2">여행자 신뢰센터</h4>
                     <div class="footer-block-description">
-                        상품 이용 중 불편한 점이 있으셨나요?
-                    [여행자신뢰센터]로 접속해 주세요!
+                        <span class="text">상품 이용 중 불편한 점이 있으셨나요?
+                            [여행자신뢰센터]로 접속해 주세요!</span>
                     </div>
                 </a>
             </div>
