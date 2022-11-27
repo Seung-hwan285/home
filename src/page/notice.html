@@ -4,10 +4,300 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./src/css/index.css">
-    <title>Notice</title>
+    <link href="../css/notice.css" rel="stylesheet">
+    <title>DTR 국내 여행 추천 - 공지사항</title>
 </head>
 <body>
-    <h1>공지사항</h1>
+    <div id="DomesticTourRecommend">
+        <div id="wrap" class="main-wrap">
+            <div id="header">
+                <!-- header-top -->
+                <div class="header-top">
+                    <div class="top-inner">
+                        <button type="button" class="logo-btn" onclick="window.location.href='../../index.html'">
+                            <img class="logo" src="../../img/logo.png" alt="DTR logo">
+                        </button>
+                    </div>
+                </div>
+                <!-- header-bottom 메인메뉴 -->
+                <div class="header-bottom">
+                    <div class="bot-inner">
+                        <nav class="gnb1">
+                            <li>
+                                <a name="mainMenu" href="./notice.html">새소식</a>
+                                <ul name="subMenu" class="gnb2">
+                                    <li>
+                                        <a href="./notice.html">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href=./event.html>이벤트</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a name="mainMenu" class="gnb-selector" href="pass">여행 추천</a>
+                                <ul name="subMenu" class="gnb2">
+                                    <li>
+                                        <a href="pass">국내 여행</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a name="mainMenu" class="gnb-selector" href="./client.html">고객센터</a>
+                                <ul name="subMenu" class="gnb2">
+                                    <li>
+                                        <a href="./client.html">Q&A</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <article class="notice">
+                    <div class="art-title-container">
+                        <h2 class="art1-title">공지사항 📋</h2>
+                    </div>
+                    <div class="news-container">
+                        <div id="notice1" class="tab-content tab-content1 on" style="overflow: hidden;">
+                            <h3 class="blind">공지사항</h3>
+                            <div class="table-wrap noticelist">
+                                <table class="table-type1 ellipsis">
+                                    <caption>공지사항 (공지,제목,등록일자)</caption>
+                                    <colgroup>
+                                        <col width="15%">
+                                        <col width="70%">
+                                        <col width="15%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>공지</th>
+                                            <th>제목</th>
+                                            <th>등록일자</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="10" href="pass">[공지] 공지사항 사이트 구현</a>
+                                            </td>
+                                            <td>2022.11.25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="9" href="pass">[공지] 공지 입니다.</a>
+                                            </td>
+                                            <td>2022.11.24</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="8" href="pass">[공지] 캐러셀 수정</a>
+                                            </td>
+                                            <td>2022.11.23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="7" href="pass">[공지] 메인 사이트 구현</a>
+                                            </td>
+                                            <td>2022.11.19</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="6" href="pass">[공지] 디자인 회의</a>
+                                            </td>
+                                            <td>2022.11.12</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="5" href="pass">[공지] 회의</a>
+                                            </td>
+                                            <td>2022.11.09</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="4" href="pass">[공지] 제안서 제출</a>
+                                            </td>
+                                            <td>2022.11.06</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="3" href="pass">[공지] 공지입니다.</a>
+                                            </td>
+                                            <td>2022.11.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="2" href="pass">[공지] 공지입니다.</a>
+                                            </td>
+                                            <td>2022.11.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="1" href="pass">[공지] 공지입니다.</a>
+                                            </td>
+                                            <td>2022.11.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="notice2" class="tab-content tab-content2" style="overflow: hidden;">
+                            <h3 class="blind">공지사항</h3>
+                            <div class="table-wrap noticelist">
+                                <table class="table-type1 ellipsis">
+                                    <caption>공지사항 (공지,제목,등록일자)</caption>
+                                    <colgroup>
+                                        <col width="15%">
+                                        <col width="70%">
+                                        <col width="15%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th>공지</th>
+                                            <th>제목</th>
+                                            <th>등록일자</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="10" href="pass">[공지] 공지 2번째 페이지</a>
+                                            </td>
+                                            <td>2022.00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="10" href="pass">[공지] 공지 2번째 페이지</a>
+                                            </td>
+                                            <td>2022.00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="10" href="pass">[공지] 공지 2번째 페이지</a>
+                                            </td>
+                                            <td>2022.00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="10" href="pass">[공지] 공지 2번째 페이지</a>
+                                            </td>
+                                            <td>2022.00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="10" href="pass">[공지] 공지 2번째 페이지</a>
+                                            </td>
+                                            <td>2022.00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="10" href="pass">[공지] 공지 2번째 페이지</a>
+                                            </td>
+                                            <td>2022.00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="10" href="pass">[공지] 공지 2번째 페이지</a>
+                                            </td>
+                                            <td>2022.00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="10" href="pass">[공지] 공지 2번째 페이지</a>
+                                            </td>
+                                            <td>2022.00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="10" href="pass">[공지] 공지 2번째 페이지</a>
+                                            </td>
+                                            <td>2022.00.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>공지</td>
+                                            <td class="title">
+                                                <a name="10" href="pass">[공지] 공지 2번째 페이지</a>
+                                            </td>
+                                            <td>2022.00.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <div class="bottom-tapbox">
+                    <div class="bottom-tapbox-inner">
+                        <div class="tap-box">
+                            <ul class="tab2">
+                                <li class="last on">
+                                    <button type="button" title="선택됨">1</button>
+                                </li>
+                                <li class="next">
+                                    <button type="button" title="">2</button>
+                                </li>
+                                <li class="on-back"></li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn-top">▲TOP</a>
+                    </div>
+                </div>
+            </section>
+            <footer id="footer">
+                <div class="footerinner">
+                    <div class="footerTopBox">
+                        <button type="button" class="logo-btn" onclick="window.location.href='../../index.html'">
+                            <img class="logo" src="../../img/logo.png" alt="DTR logo">
+                        </button>
+                        <ul class="foot-menu" style="overflow:hidden;">
+                            <li>
+                                <a href="#/agrAgreement">이용약관</a>
+                            </li>
+                            <li>
+                                <a class="ft-red" href="#/agrPersonal">개인정보처리방침</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        //공지사항 탭 박스
+        document.querySelector('.last').addEventListener('click', function() {
+            document.querySelector('.on-back').style.transform = 'translate(0px)';
+            document.querySelector('.last > button').style.color = '#ffffff';
+            document.querySelector('.next > button').style.color = '#343a40';
+            document.getElementById("notice1").className = "tab-content tab-content1 on";
+            document.getElementById("notice2").className = "tab-content tab-content2";
+        })
+        document.querySelector('.next').addEventListener('click', function() {
+            document.querySelector('.on-back').style.transform = 'translate(52px)';
+            document.querySelector('.last > button').style.color = '#343a40';
+            document.querySelector('.next > button').style.color = '#ffffff';
+            document.getElementById("notice1").className = "tab-content tab-content1";
+            document.getElementById("notice2").className = "tab-content tab-content2 on";
+        })
+    </script>
 </body>
 </html>
