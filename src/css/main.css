@@ -1,151 +1,5 @@
-a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, button, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, input, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, select, small, span, strike, strong, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, tt, u, ul, var, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 16px;
-    letter-spacing: -1px;
-    vertical-align: baseline;
-    color: #343a40;
-    text-decoration: none;
-    }
-
-body {
-    width: 100%;
-    height: 100%;
-    line-height: 1.5;
-}
- 
-#wrap {
-    display: block;
-    text-align: center;
-}
-
-#header {
-    background: #ffffff;
-}
-
-.header-top {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: auto;
-    z-index: auto;
-    border-bottom: 1px solid #dedede;
-}
-
-.top-inner {
-    position: relative;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    width: 100%;
-    height: 72px;
-    max-width: 1080px;
-    margin: 0px auto;
-}
-
-.logo-btn {
-    margin: 0px;
-    padding: 0px;
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
-    cursor: pointer;
-    touch-action: manipulation;
-}
-
-.logo {
-    display: block;
-    width: 225px;
-}
-
-.header-bottom {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 50px;
-    z-index: auto;
-    font-weight: bold;
-}
-
-.bot-inner {
-    position: relative;
-    display: flex;
-    margin: 0px auto;
-    width: 100%;
-    height: 50px;
-    max-width: 1100px;
-}
-
-/** gnb */
-
-.header-bottom .gnb1 {
-    font-size: 0px;
-    width: auto;
-    z-index: 1000;
-}
-
-li, ol, ul {
-    border-radius: 10px;
-    list-style: none;
-}
-
-.header-bottom .gnb1 > li:hover > a{
-    color: #4b7bff;
-}
-
-.header-bottom .gnb1 > li {
-    display: inline-block;
-    left: 0px;
-    width: auto;
-    vertical-align: top;
-    text-align: center;
-}
-
-.gnb-selector {
-    margin-left: 10px;
-}
-
-.header-bottom .gnb1 > li > a {
-    text-align: left;
-    display: flex;
-    height: 30px;
-    width: auto;
-    text-decoration: none;
-    font-size: 18px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.header-bottom .gnb2 {
-    display: none;
-    box-shadow: 0 0 8px rgb(19 65 255 / 70%);
-    background: #ffffff;
-    z-index: 1000;
-}
-
-.header-bottom .gnb1 > li:hover > .gnb2 {
-    display: block;
-}
-
-.header-bottom .gnb2 a {
-    display: block;
-    text-decoration: none;
-    width: auto;
-    padding: 10px 0px;
-}
-
-.header-bottom .gnb2 a:hover {
-    color: #4b7bff;
-}
-
-/** section */
-section {
-    display: block;
-}
+@import "./common.css";
+/** 베스트 여행 상품 article */
 
 .best-tour-price {
     display: block;
@@ -155,26 +9,7 @@ section {
     padding-bottom: 56px;
 }
 
-.art-title-container {
-    display: block;
-    position: relative;
-    height: auto;
-    width: auto;
-    max-width: 1080px;
-    margin: 0px auto;
-}
-
-.art1-title {
-    display: block;
-    position: relative;
-    text-align: left;
-    width: auto;
-    max-width: 1080px;
-    padding: 20px 0px;
-    font-size: 36px;
-}
-
-/** 베스트 여행 상품 캐러셀 */
+/** 캐러셀 */
 
 .carousel-grid-container {
     position: relative;
@@ -292,11 +127,9 @@ section {
 }
 
 .BestTourPrice-Link {
-    border: none;
-    bottom: 32px;
     box-shadow: 0px 0px 0px 1px rgb(33 37 41 / 8%);
     left: 20px;
-    bottom: 100px;
+    bottom: 40px;
     position: absolute;
     color: #495056;
     background-color: #ffffff;
@@ -382,7 +215,7 @@ section {
         padding-top: 4px;
     }
     
-/** tour gide */
+/** 투어 가이드 article */
 
 .gridcontainer2 {
     margin: 0px auto;
@@ -400,9 +233,12 @@ section {
 .art2-title {
     display: block;
     font-size: 24px;
+    font-weight: bold;
     text-align: left;
     padding: 20px  0px;
 }
+
+/** 캐러셀 */
 
 .swiper-container2 {
     width: 100%;
@@ -484,7 +320,7 @@ section {
 }
 
 .TourGuideCard-title {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     letter-spacing: -.4px;
     line-height: 1.29;
@@ -502,14 +338,13 @@ section {
     font-size: 13px;
     font-weight: 600;
     letter-spacing: -.3px;
-    line-height: 26px;
-    overflow: hidden;
+    line-height: 13px;
     text-overflow: ellipsis;
     text-shadow: 0 1px 8px rgb(33 37 41 / 60%);
 }
 
 .TourGuideCard-Link {
-    bottom: 64px;
+    bottom: 0px;
     box-shadow: 0 0 0 1px rgb(33 37 41 / 8%);
     position: absolute;
     color: #495056;
@@ -518,22 +353,20 @@ section {
     height: 145px;
     width: 250px;
     left: 0px;
-    padding-top: 12px;
+    padding-top: 25px;
     padding-left: 14px;
-    padding-right: 14px;
+    padding-right: 20px;
     box-sizing: border-box;
     display: inline-block;
     line-height: 1;
 }
 
 .Button-module2 {
-    border: 0;
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
     cursor: pointer;
     font-weight: 800;
     transition: box-shadow .1s ease-out,background-color .1s ease-out,color .1s ease-out,border-bottom .1s ease-out;
     text-decoration: none;
+    overflow: hidden;
 }
 
 .Button-module2:hover {
@@ -575,6 +408,8 @@ section {
     padding-top: 4px;
 }
 
+/** 공지사항 & FAQ & Q&A article */
+
 .news {
     display: block;
     width: auto;
@@ -598,7 +433,6 @@ section {
     position: relative;
     width: auto;
     height: auto;
-
 }
 
 .tab3 {
@@ -780,56 +614,4 @@ table {
 
 table td {
     font-size: 16px;
-}
-
-footer {
-    position: relative;
-    width: auto;
-    padding-bottom: calc(env(safe-area-inset-bottom));
-    background-color: rgb(255, 255, 255);
-    border-top: 1px solid rgb(233, 236, 239);
-}
-
-.footerinner {
-    display: block;
-    position: relative;
-    height: 290px;
-    max-width: 1080px;
-    margin: 0px auto;
-}
-
-.footerTopBox {
-    display: flex;
-    position: relative;
-    height: auto;
-    text-align: left;
-    margin: 0px auto;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.foot-menu {
-    position: relative;
-}
-
-.foot-menu > li {
-    position: relative;
-    display: inline-block;
-    padding: 0 10px;
-}
-
-.foot-menu > li::before {
-    display: block;
-    content: "";
-    position: absolute;
-    right: -4px;
-    top: 50%;
-    margin-top: -5px;
-    width: 1px;
-    height: 10px;
-    background: #a7a7a7;
-}
-    
-.ft-red {
-    color: red;
 }
